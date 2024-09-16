@@ -20,13 +20,16 @@
         <h1 class="title">R Adithya Kumar</h1>
         <span class="subtitle">Software Engineer</span>
       </td>
-      <th><i class="fa fa-github"></i>&nbsp;<a class="title-link" href="https://github.com/SilentCruzer" target="_blank">Github</a></th>
+      <th><i class="fa fa-github"></i>&nbsp;<a class="title-link" href="https://github.com/SilentCruzer"
+          target="_blank">Github</a></th>
     </tr>
     <tr>
-      <th><i class="fa fa-twitter"></i>&nbsp;<a class="title-link"  href="https://x.com/silentcruzer" target="_blank">Twitter</a></th>
+      <th><i class="fa fa-twitter"></i>&nbsp;<a class="title-link" href="https://x.com/silentcruzer"
+          target="_blank">Twitter</a></th>
     </tr>
     <tr>
-      <th><i class="fa fa-linkedin"></i>&nbsp;<a class="title-link"  href="https://www.linkedin.com/in/r-adithya-kumar/" target="_blank">LinkedIn</a></th>
+      <th><i class="fa fa-linkedin"></i>&nbsp;<a class="title-link" href="https://www.linkedin.com/in/r-adithya-kumar/"
+          target="_blank">LinkedIn</a></th>
     </tr>
   </table>
 
@@ -42,17 +45,17 @@
         const root = document.documentElement;
 
         const themeButtons = {
-    'truly-dark': document.getElementById('truly-dark-btn'),
-    'dark': document.getElementById('dark-btn'),
-    'light': document.getElementById('light-btn')
-  };
+          'truly-dark': document.getElementById('truly-dark-btn'),
+          'dark': document.getElementById('dark-btn'),
+          'light': document.getElementById('light-btn')
+        };
 
-  // Remove 'active' class from all theme buttons
-  for (const key in themeButtons) {
-    themeButtons[key].classList.remove('active');
-  }
+        // Remove 'active' class from all theme buttons
+        for (const key in themeButtons) {
+          themeButtons[key].classList.remove('active');
+        }
 
-  
+
         if (theme === 'dark') {
           root.style.setProperty('--text-color', '#e8e6e3');
           root.style.setProperty('--background-color', '#181a1b');
@@ -60,7 +63,7 @@
         } else if (theme === 'light') {
           root.style.setProperty('--text-color', '#000');
           root.style.setProperty('--background-color', '#fff');
-          root.style.setProperty('--border-semidark', '#000');
+          root.style.setProperty('--border-color', '#000');
         } else if (theme === 'truly-dark') {
           root.style.setProperty('--text-color', '#fff');
           root.style.setProperty('--background-color', '#000');
@@ -69,18 +72,18 @@
 
         themeButtons[theme].classList.add('active');
       }
-  
+
       const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
       if (prefersDarkScheme) {
         setTheme('dark');
       } else {
         setTheme('light');
       }
-  
+
       document.getElementById('truly-dark-btn').addEventListener('click', () => setTheme('truly-dark'));
       document.getElementById('dark-btn').addEventListener('click', () => setTheme('dark'));
       document.getElementById('light-btn').addEventListener('click', () => setTheme('light'));
-  
+
       setTheme('dark');
     </script>
 
@@ -176,7 +179,8 @@
     <h3>Airblue</h3>
     <p>A shopping website to use the earned AirMiles to buy daily use products.
       Frontend: Built with React JS, Bootstrap 5, Backend: Built with django, graphql</p>
-      <a class="prj-btn" href="https://github.com/Akshatji800/AirBlue" target="_blank">--></a>  </div>
+    <a class="prj-btn" href="https://github.com/Akshatji800/AirBlue" target="_blank">--></a>
+  </div>
 
   <hr />
 
@@ -185,7 +189,8 @@
     <h3>Relive</h3>
     <p>Relive is a cross-platform application that can be used both in Android/IOS and it is made using Flutter. It aims
       to solve the mental health issues of a person. </p>
-      <a class="prj-btn" href="https://gitlab.com/amfoss/amfoss/mental-health" target="_blank">--></a>  </div>
+    <a class="prj-btn" href="https://gitlab.com/amfoss/amfoss/mental-health" target="_blank">--></a>
+  </div>
 
   <hr />
 
@@ -194,7 +199,8 @@
     <h3>CreatorSpace</h3>
     <p>CreatorSpace is a web3 platform that allows musicians to promote their work without the assistance of outside
       labels. </p>
-      <a class="prj-btn" href="https://github.com/SilentCruzer/CreatorSpace" target="_blank">--></a>  </div>
+    <a class="prj-btn" href="https://github.com/SilentCruzer/CreatorSpace" target="_blank">--></a>
+  </div>
 
   <hr />
 
@@ -203,7 +209,8 @@
     <h3>Lumos</h3>
     <p>Lumos aims to bridge the gap between them and the physical world by leveraging the power of Deep Learning which
       can be made accessible even on low-ended devices </p>
-      <a class="prj-btn" href="https://github.com/SilentCruzer/Lumos" target="_blank">--></a>  </div>
+    <a class="prj-btn" href="https://github.com/SilentCruzer/Lumos" target="_blank">--></a>
+  </div>
 
   <hr />
 
@@ -213,7 +220,8 @@
     <p>MedGuardian aims to provide secure and transparent access to medical records using Web3, DIDs, and ZK-proof
       technology. It empowers patients to control their data while ensuring healthcare providers can access necessary
       information without compromising privacy. </p>
-      <a class="prj-btn" href="https://github.com/SilentCruzer/MediGuard" target="_blank">--></a>  </div>
+    <a class="prj-btn" href="https://github.com/SilentCruzer/MediGuard" target="_blank">--></a>
+  </div>
 
   <hr />
 
@@ -222,13 +230,13 @@
   <p> The main goal of this project is to incorporate a Guild / Clans concept from books, games, and other media into a
     web ecosystem where people can earn status or level by showcasing their abilities/skills.
   </p>
-  <a class="prj-btn" href="https://github.com/SilentCruzer/SoulDAO" target="_blank">--></a>  </div>
+  <a class="prj-btn" href="https://github.com/SilentCruzer/SoulDAO" target="_blank">--></a> </div>
 
   <hr />
   <h2 id="discussion">Discussion</h2>
   <p>
     That’s a wrap! Hit me up if you’d like to work on something cool or just talk tech.
-  <script src="index.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>

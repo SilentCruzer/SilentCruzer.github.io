@@ -22,7 +22,6 @@
   font-size: 16px;
 }
 
-
 * {
   box-sizing: border-box;
 }
@@ -294,7 +293,7 @@ li::marker {
 input,
 button,
 .prj-btn,
-textarea{
+textarea {
   border: var(--border-thickness) solid var(--border-color);
   padding: calc(var(--line-height) / 2 - var(--border-thickness))
     calc(1ch - var(--border-thickness));
@@ -344,12 +343,14 @@ input {
 ::-ms-input-placeholder {
   color: var(--text-color-alt);
 }
-button::-moz-focus-inner, .prj-btn {
+button::-moz-focus-inner,
+.prj-btn {
   padding: 0;
   border: 0;
 }
 
-.prj-btn, button {
+.prj-btn,
+button {
   text-transform: uppercase;
   font-weight: var(--font-weight-medium);
   cursor: pointer;
@@ -359,13 +360,14 @@ button:hover {
   background: var(--text-color);
   color: var(--background-color);
 }
-button:active, .prj-btn {
+button:active,
+.prj-btn {
   transform: translate(2px, 2px);
 }
 
 .prj-btn {
-    color: #FFFFFF;
-    text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .title-link {
@@ -502,7 +504,6 @@ label input {
 .debug-toggle-label {
   text-align: right;
 }
-
 
 .active-theme {
   color: var(--background-color);
