@@ -374,6 +374,9 @@ button:active, .prj-btn {
     text-decoration: none;
 }
 
+.title-link {
+  text-decoration: none;
+}
 label {
   display: block;
   width: calc(round(down, 100%, 1ch));
