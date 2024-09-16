@@ -29,6 +29,49 @@
       <th><i class="fa fa-linkedin"></i>&nbsp;<a class="title-link"  href="https://www.linkedin.com/in/r-adithya-kumar/" target="_blank">LinkedIn</a></th>
     </tr>
   </table>
+
+  <h2 id="introduction">Theme</h2>
+
+  <div class="buttons">
+    <button id="truly-dark-btn">Truly Dark</button>
+    <button id="dark-btn">Dark</button>
+    <button id="light-btn">Light</button>
+
+    <script>
+      function setTheme(theme) {
+        const root = document.documentElement;
+  
+        if (theme === 'dark') {
+          root.style.setProperty('--text-color', '#e8e6e3');
+          root.style.setProperty('--background-color', '#181a1b');
+          root.style.setProperty('--border-color', '#303436');
+        } else if (theme === 'light') {
+          root.style.setProperty('--text-color', '#000');
+          root.style.setProperty('--background-color', '#fff');
+          root.style.setProperty('--border-semidark', '#000');
+        } else if (theme === 'truly-dark') {
+          root.style.setProperty('--text-color', '#fff');
+          root.style.setProperty('--background-color', '#000');
+          root.style.setProperty('--border-color', '#fff');
+        }
+      }
+  
+      const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (prefersDarkScheme) {
+        setTheme('dark');
+      } else {
+        setTheme('light');
+      }
+  
+      document.getElementById('truly-dark-btn').addEventListener('click', () => setTheme('truly-dark'));
+      document.getElementById('dark-btn').addEventListener('click', () => setTheme('dark'));
+      document.getElementById('light-btn').addEventListener('click', () => setTheme('light'));
+  
+      setTheme('dark');
+    </script>
+
+
+  </div>
   <h2 id="introduction">Introduction</h2>
   <p>
     Hello! I am Adithya, and I am an open-source enthusiast with expertise in
