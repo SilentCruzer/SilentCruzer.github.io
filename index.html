@@ -5,9 +5,8 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="author" content="Oskar Wickström" />
   <meta name="dcterms.date" content="2024-08-26" />
-  <title>The Monospace Web</title>
+  <title>R Adithya Kumar</title>
   <link rel="stylesheet" href="reset.css" />
   <link rel="stylesheet" href="index.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -15,27 +14,33 @@
 
 <body>
   <table class="header">
-    <!-- <tr>
+    <tr>
       <td colspan="2" class="banner">
-        <img class="width-auto" src="Banner2.gif" />
+        <img class="width-auto" src="assets/images/Banner_street.gif" />
       </td>
-    </tr> -->
+    </tr>
     <tr>
       <td colspan="1" rowspan="3" class="banner">
         <h1 class="title">R Adithya Kumar</h1>
-        <span class="subtitle">Software Engineer</span>
+        <span class="subtitle">Software Engineer</span><br />
+        <span class="location" class="location">Trivandrum, Kerala</span>
       </td>
-      <th><i class="fa fa-github"></i>&nbsp;<a class="title-link" href="https://github.com/SilentCruzer"
-          target="_blank">Github</a></th>
+      
+      <th class="social_tab" id="github-btn"><i class="fa fa-github"></i>&nbsp;Github</th>
+    </tr>
+
+    <tr>
+      <th class="social_tab" id="twitter-btn"><i class="fa fa-twitter"></i>&nbsp;Twitter</th>
     </tr>
     <tr>
-      <th><i class="fa fa-twitter"></i>&nbsp;<a class="title-link" href="https://x.com/silentcruzer"
-          target="_blank">Twitter</a></th>
+      <th class="social_tab" id="linkedin-btn"><i class="fa fa-linkedin"></i>&nbsp;LinkedIn</th>
     </tr>
     <tr>
-      <th><i class="fa fa-linkedin"></i>&nbsp;<a class="title-link" href="https://www.linkedin.com/in/r-adithya-kumar/"
-          target="_blank">LinkedIn</a></th>
+      <td colspan="2" class="cv_tab" id="cv-btn">
+        View my cv
+      </td>
     </tr>
+    
   </table>
 
   <h2 id="introduction">Theme</h2>
@@ -46,6 +51,10 @@
     <button id="light-btn">Light</button>
 
     <script>
+      function NewTab(url) {
+            window.open(url, "_blank");
+        }
+
       function setTheme(theme) {
         const root = document.documentElement;
 
@@ -88,6 +97,12 @@
       document.getElementById('truly-dark-btn').addEventListener('click', () => setTheme('truly-dark'));
       document.getElementById('dark-btn').addEventListener('click', () => setTheme('dark'));
       document.getElementById('light-btn').addEventListener('click', () => setTheme('light'));
+
+      document.getElementById('github-btn').addEventListener('click', () => NewTab("https://github.com/SilentCruzer"));
+      document.getElementById('twitter-btn').addEventListener('click', () => NewTab('https://x.com/silentcruzer'));
+      document.getElementById('linkedin-btn').addEventListener('click', () => NewTab('https://www.linkedin.com/in/r-adithya-kumar/'));
+      document.getElementById('cv-btn').addEventListener('click', () => NewTab('https://drive.google.com/file/d/1ioeLghko9B76DNXVhBkloU_uW2TITAGQ/view'));
+
 
       setTheme('dark');
     </script>

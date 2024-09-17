@@ -169,9 +169,6 @@ th {
 .header h1 {
   margin: 0;
 }
-.header tr td:last-child {
-  text-align: right;
-}
 
 p {
   word-break: break-word;
@@ -529,4 +526,18 @@ button.active {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, var(--background-color) 95%);
   pointer-events: none;
   z-index: 1;
+}
+
+.location {
+  font-size: 13px;
+}
+
+.social_tab:hover, .cv_tab:hover {
+  background-color: var(--text-color);
+  color: var(--background-color);
+  cursor: pointer;
+}
+
+.cv_tab{
+  text-align: center;
 }
